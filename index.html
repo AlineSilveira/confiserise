@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8" />
-<html>
+<html ng-app="store">
 
 <head>
   <link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen" charset="utf-8">
@@ -16,9 +16,9 @@
     <div class="nav-wrapper">
       <div class="col s12">
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
+          <li><a href="sass.html">Home</a></li>
+          <li><a href="badges.html">Quem Somos</a></li>
+          <li><a href="collapsible.html">Contato</a></li>
         </ul>
       </div>
 
@@ -66,14 +66,14 @@
   <section ng-controller="ProducaoCtrl as item">
   <article ng-repeat="bolos in item.products">
   <div class="col s3">
-   <!-- <h2 class="header">Horizontal Card</h2> -->
+  <h2 class="header">{{bolos.nome}}</h2>
    <div class="card horizontal">
      <div class="card-image">
-       <img src="foto-circle4.jpg">
+       <img ng-src="{{bolos.img}}">
      </div>
      <div class="card-stacked">
        <div class="card-content">
-         <p>blablala blabla blablabla blabla cake pop</p>
+         <p>{{bolos.descricao}}</p>
        </div>
        <div class="card-action">
          <a href="#">This is a link</a>
