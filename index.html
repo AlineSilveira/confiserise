@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<meta charset="utf-8" />
+<html>
+
+<head>
+  <link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen" charset="utf-8">
+  <link rel="stylesheet" href="estilo.css" media="screen" charset="utf-8">
+  <script src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+</head>
+
+<body>
+
+<header>
+  <nav>
+
+    <div class="nav-wrapper">
+      <div class="col s12">
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="sass.html">Sass</a></li>
+          <li><a href="badges.html">Components</a></li>
+          <li><a href="collapsible.html">JavaScript</a></li>
+        </ul>
+      </div>
+
+    </div>
+</header>
+
+<br />
+<div class="row">
+  <div class="col s12">
+    <div class="slider">
+      <ul class="slides">
+        <li>
+          <img src="foto-circle1.jpg" alt="" />
+          <div class="caption center-align">
+          </div>
+        </li>
+        <li>
+          <img src="foto-circle1.jpg" alt="" />
+          <div class="caption center-align">
+            <h3>Title</h3>
+            <p>Teste teste teste </p>
+          </div>
+        </li>
+        <li>
+          <img src="foto-circle1.jpg" alt="" />
+          <div class="caption center-align">
+            <h3>Title</h3>
+            <p>Teste teste teste </p>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+  </div>
+
+</div>
+
+
+
+  [IMAGEM AQUI]
+  [CAROUSEL]
+
+<div class="row container">
+  <section ng-controller="ProducaoCtrl as item">
+  <article ng-repeat="bolos in item.products">
+  <div class="col s3">
+   <!-- <h2 class="header">Horizontal Card</h2> -->
+   <div class="card horizontal">
+     <div class="card-image">
+       <img src="foto-circle4.jpg">
+     </div>
+     <div class="card-stacked">
+       <div class="card-content">
+         <p>blablala blabla blablabla blabla cake pop</p>
+       </div>
+       <div class="card-action">
+         <a href="#">This is a link</a>
+       </div>
+     </div>
+   </div>
+  </div>
+  </article>
+</section>
+</div>
+<!--
+  <div class="col s3">
+  <h2 class="header">Horizontal Card</h2>
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="foto-circle1.jpg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>blablabla blabla blablabla bla bla bolo</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col s3">
+    <div class="card horizontal">
+      <div class="card-image">
+        <img src="foto-circle4.jpg">
+      </div>
+      <div class="card-stacked">
+        <div class="card-content">
+          <p>blablabla blabla blablabla bla bla cup cake</p>
+        </div>
+        <div class="card-action">
+          <a href="#">This is a link</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+-->
+
+<script type="text/javascript" src="materialize/js/jquery-3.1.0.js"></script>
+<script src="materialize/js/materialize.js"></script>
+<script>
+  $(function(){
+    $(".slider").slider();
+  });
+</script>
+
+</body>
+
+<footer class="page-footer">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Footer Content</h5>
+                <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Links</h5>
+                  <a href="#!"><img src="contact.png" /></a>
+                  <a href="#!"><img src="facebook.png" /></a>
+                  <a href="#!"><img src="twitter.png" /></a>
+                <!--  <li><a href="#!"><img src="instagram.png" /></a></li> -->
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2014 Copyright Text
+            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+</html>
