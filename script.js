@@ -1,24 +1,23 @@
-function(){
- var app = angular.module('store', []);
-app.controller('ProducaoCtrl', function(){
-  this.products = bolos;
-  });
-};
+(function(){
+	angular.module("confiserise",[]);
+	angular.module("confiserise").controller("confiseriseCtrl", function($scope){
 
-var bolos = [
-  {
-  nome: 'bolo',
-  descricao: 'blablabla',
-  img: 'foto-circle1.jpg'
-},
-{
-  nome: 'cupcake',
-  descricao: 'blablabla',
-  img: 'foto-circle4.jpg'
-}
-{
-  nome: 'cakepop',
-  descricao: 'blablabla',
-  img: 'foto-circle1.jpg'
-}
-];
+		$scope.bolos = [
+      {
+      nome: 'bolo',
+      descricao: 'blablabla blablabla blabla ',
+      img: 'foto-circle1.jpg'
+    },
+    {
+      nome: 'cupcake',
+      descricao: 'blablablablaba blablablababalab ',
+      img: 'foto-circle4.jpg'
+    },
+    {
+      nome: 'cakepop',
+      descricao: 'blalablabalbal balablabalbabaalb ',
+      img: 'foto-circle1.jpg'
+    }
+    ];
+  });
+})();
