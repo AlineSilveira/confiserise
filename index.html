@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <meta charset="utf-8" />
-<html ng-app="store">
+<html ng-app="confiserise">
 
 <head>
   <link rel="stylesheet" href="materialize/css/materialize.min.css" media="screen" charset="utf-8">
   <link rel="stylesheet" href="estilo.css" media="screen" charset="utf-8">
-  <script src="https://code.angularjs.org/1.5.7/angular-route.min.js"></script>
+  <script src="C:\lib\angular-1.5.8\angular.js"></script>
+  <script src="C:\lib\angular-1.5.8\angular-messages.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </head>
 
 <body>
@@ -59,21 +61,21 @@
 
 
 
-  [IMAGEM AQUI]
-  [CAROUSEL]
+  [DESCRIÇÃO SOBRE A CONFISERISE]
+
 
 <div class="row container">
-  <section ng-controller="ProducaoCtrl as item">
-  <article ng-repeat="bolos in item.products">
+  <section ng-controller="confiseriseCtrl">
+  <article ng-repeat="bolo in bolos">
   <div class="col s3">
-  <h2 class="header">{{bolos.nome}}</h2>
+  <h2 class="header">{{bolo.nome}}</h2>
    <div class="card horizontal">
      <div class="card-image">
-       <img ng-src="{{bolos.img}}">
+       <img ng-src="{{bolo.img}}">
      </div>
      <div class="card-stacked">
        <div class="card-content">
-         <p>{{bolos.descricao}}</p>
+         <p>{{bolo.descricao}}</p>
        </div>
        <div class="card-action">
          <a href="#">This is a link</a>
@@ -84,42 +86,7 @@
   </article>
 </section>
 </div>
-<!--
-  <div class="col s3">
-  <h2 class="header">Horizontal Card</h2>
-    <div class="card horizontal">
-      <div class="card-image">
-        <img src="foto-circle1.jpg">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>blablabla blabla blablabla bla bla bolo</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="col s3">
-    <div class="card horizontal">
-      <div class="card-image">
-        <img src="foto-circle4.jpg">
-      </div>
-      <div class="card-stacked">
-        <div class="card-content">
-          <p>blablabla blabla blablabla bla bla cup cake</p>
-        </div>
-        <div class="card-action">
-          <a href="#">This is a link</a>
-        </div>
-      </div>
-    </div>
-  </div>
-
-</div>
--->
 
 <script type="text/javascript" src="materialize/js/jquery-3.1.0.js"></script>
 <script src="materialize/js/materialize.js"></script>
